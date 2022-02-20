@@ -14,6 +14,11 @@ public class MyLinkedList {
             tail = newNode;
         }
     }
+    public void insertAtStart(int data){
+        MyNode newNode = new MyNode(data);
+        newNode.next = head;
+        head = newNode;
+    }
 
 
     class MyNode{
@@ -25,6 +30,7 @@ public class MyLinkedList {
             next = null;
         }
     }
+
 
     void print(){
         MyNode temp = head;
