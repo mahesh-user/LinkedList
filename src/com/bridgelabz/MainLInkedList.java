@@ -6,8 +6,7 @@ public class MainLInkedList {
         list.add(56);
         list.add(30);
         list.add(70);
-
+        list.insertAfter(30,40);
         list.print();
-        System.out.println("\n Index number : " + list.search(56));
     }
 }

@@ -79,6 +79,20 @@ public class MyLinkedList {
     }
 
 
+    public void insertAfter(int searchData,int data){
+        //creating new node
+        MyNode newNode = new MyNode(data);
+        MyNode temp = head;
+        while (temp != null){
+            if (temp.data == searchData){
+                newNode.next = temp.next;
+                temp.next = newNode;
+            }
+            temp = temp.next;
+        }
+    }
+
+
     class MyNode{
         int data;
         MyNode next;
