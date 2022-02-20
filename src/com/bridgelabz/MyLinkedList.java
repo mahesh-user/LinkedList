@@ -38,6 +38,16 @@ public class MyLinkedList {
     }
 
 
+    public void insertAt(int index,int data){
+        MyNode newNode = new MyNode(data);
+        MyNode temp = head;
+        for (int i=0;i < index - 1;i++){
+            temp = temp.next;
+        }
+        newNode.next = temp.next;
+        temp.next = newNode;
+    }
+
     class MyNode{
         int data;
         MyNode next;
