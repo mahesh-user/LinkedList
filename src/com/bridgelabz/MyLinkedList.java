@@ -65,6 +65,20 @@ public class MyLinkedList {
     }
 
 
+    public int search(int data){
+        MyNode temp = head;
+        int index = 0;
+        while(temp != null){
+            if (temp.data == data) {
+                return index;
+            }
+            index++;
+            temp = temp.next;
+        }
+        return index;
+    }
+
+
     class MyNode{
         int data;
         MyNode next;
