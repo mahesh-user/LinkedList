@@ -3,6 +3,7 @@ package com.bridgelabz;
 public class MyLinkedList {
     MyNode head,tail;
 
+
     public void add(int data) {
         MyNode newNode = new MyNode(data);
         if (head == null){
@@ -47,6 +48,13 @@ public class MyLinkedList {
         newNode.next = temp.next;
         temp.next = newNode;
     }
+
+
+    public void deleteFirstNode(){
+        MyNode temp = head;
+        head = temp.next;
+    }
+
 
     class MyNode{
         int data;
