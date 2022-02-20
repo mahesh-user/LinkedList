@@ -6,7 +6,7 @@ public class MainLInkedList {
         list.add(56);
         list.add(30);
         list.add(70);
-        list.deleteFirstNode();
+        list.popLast();
 
         list.print();
     }

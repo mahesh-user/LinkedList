@@ -50,9 +50,18 @@ public class MyLinkedList {
     }
 
 
-    public void deleteFirstNode(){
+    public void pop(){
         MyNode temp = head;
         head = temp.next;
+    }
+
+
+    public void popLast(){
+        MyNode temp = head;
+        while ((temp.next).next != null){
+            temp = temp.next;
+        }
+        temp.next = null;
     }
 
 
@@ -74,4 +83,5 @@ public class MyLinkedList {
             temp = temp.next;
         }
     }
+
 }
